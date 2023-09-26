@@ -6,12 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/musicpage_bc"
     tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tablayot"
+        android:id="@+id/tablayout"
+        app:tabBackground="@drawable/tab_selected_color"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorHeight="0dp"
         />
 
     <androidx.viewpager.widget.ViewPager

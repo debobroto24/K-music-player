@@ -14,7 +14,7 @@ public class MusicViewPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        if(position ==1 ){
+        if(position ==0 ){
             return new MusicListFragment();
         }else{
             return new AlbumFragment();
@@ -30,7 +30,7 @@ public class MusicViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if(position == 0 ){
-            return "Musics";
+            return "Music";
         }else{
             return "Albums";
         }
